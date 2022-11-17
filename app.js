@@ -19,6 +19,8 @@ const initSizeAndColor = () => {
 	colorsDiv.children.item(1).classList.add('active');
 	colorInput.value = colors[0].hex;
 	colorView.style.backgroundColor = colors[0].hex;
+	ctx.strokeStyle = colors[0].hex;
+	ctx.fillStyle = colors[0].hex;
 }
 
 // Brush Size //
