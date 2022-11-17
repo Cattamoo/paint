@@ -11,6 +11,7 @@ canvas.width = CANVAS_W;
 canvas.height = CANVAS_H;
 ctx.lineCap = 'round';
 const initSizeAndColor = () => {
+	ctx.globalCompositeOperation = 'source-over';
 	lineWidth.value = DEFAULT_BRUSH_SIZE;
 	ctx.lineWidth = DEFAULT_BRUSH_SIZE;
 	document.querySelector('#size label').style.width = `${DEFAULT_BRUSH_SIZE}px`;
