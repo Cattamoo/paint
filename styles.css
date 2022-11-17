@@ -1,0 +1,124 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: .25rem;
+	background-color: #f7f0ff;
+	accent-color: #657;
+}
+
+canvas {
+	width: 800px;
+	height: 800px;
+	background-color: white;
+	border: 1px solid #e0e0e0;
+	box-shadow: 0 0 5px #e0e0e0;
+	border-radius: 1rem;
+}
+
+button {
+	border: 0;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background-color: #edf;
+}
+button:hover {
+	transform: scale(1.1);
+	background-color: #657;
+	color: white;
+}
+button:active {
+	transform: scale(.9);
+}
+
+#save {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: .25rem;
+}
+
+#color {
+	display: flex;
+	align-items: center;
+}
+#color-input {
+	margin-right: .5rem;
+	position: absolute;
+	z-index: -1;
+	height: 50px;
+	width: 50px;
+	opacity: 0;
+}
+#colors {
+	display: flex;
+	padding-left: .25rem;
+	border-left: 1px dashed #ddd;
+}
+.color-option {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 50%;
+	transform: scale(.8);
+	background-color: white;
+	border: 2px solid #e0e0e0;
+}
+.color-option:hover {
+	transform: scale(.9);
+}
+.color-option:active {
+	transform: scale(1.1);
+}
+.color-option.active {
+	transform: scale(1);
+	border: 2px solid #505050;
+}
+
+#buttons {
+	display: flex;
+	gap: .25rem;
+}
+#buttons button {
+	width: 45px;
+	height: 45px;
+}
+#buttons button span {
+	font-size: 1.25rem !important;
+}
+#buttons input {
+	outline: 0;
+	border: 2px solid #e0e0e0;
+	border-radius: .25rem;
+	width: 300px;
+	margin-left: .5rem;
+	padding: 0 .5rem;
+	transition: .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+#buttons input:focus {
+	border: 2px solid #657;
+}
+
+#size {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 15px 1fr;
+}
+#size label {
+	border: 1px solid black;
+	width: 5px;
+	height: 5px;
+}
+
+.hide {
+	display: none !important;
+}
+
+.eTc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

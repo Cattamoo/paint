@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Paint 🎨</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<button id="save">
+		<span class="material-icons">save</span>
+	</button>
+	<canvas></canvas>
+	<div id="color">
+		<div id="color-view" class="color-option" title="selected">
+		</div>
+		<input id="color-input" type="color" />
+		<div id="colors">
+			<div id="eraser-btn" class="color-option eTc" title="eraser">
+				<span class="material-icons">clear</span>
+			</div>
+		</div>
+	</div>
+	<div id="buttons">
+		<button id="mode-btn" title="Change This Mode">
+			<span class="material-icons">format_color_fill</span>
+			<span class="material-icons hide">brush</span>
+		</button>
+		<button id="clear-btn" title="Clear">
+			<span class="material-icons">clear_all</span>
+		</button>
+		<button id="file-select" title="Add Image">
+			<span class="material-icons">add_photo_alternate</span>
+		</button>
+		<input id="text" type="text" placeholder="Write and then double click..." />
+	</div>
+	<div id="size">
+		<label for="line-width"></label>
+		<input id="line-width" type="range" min="1" max="10" value="5" step="0.1" />
+	</div>
+	<input id="file" class="hide" type="file" accept="image/*" />
+	<script src="app.js"></script>
+</body>
+</html>
